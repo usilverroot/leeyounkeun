@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>건강과 피트니스 웹 콘텐츠</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>건강과 피트니스</h1>
+        <div id="banner">
+            <p>추천 콘텐츠: 운동과 다이어트 팁!</p>
+            <button id="bannerBtn">자세히 보기</button>
+        </div>
+    </header>
+
+    <main>
+        <section id="exercise-planner">
+            <h2>맞춤형 운동 계획 생성기</h2>
+            <label for="goal">목표:</label>
+            <input type="text" id="goal" placeholder="예: 체중 감량">
+            <button onclick="generateExercisePlan()">운동 계획 생성</button>
+            <div id="exercise-output"></div>
+        </section>
+
+        <section id="calorie-calculator">
+            <h2>칼로리 계산기</h2>
+            <label for="height">신장(cm):</label>
+            <input type="number" id="height">
+            <label for="weight">체중(kg):</label>
+            <input type="number" id="weight">
+            <label for="age">나이:</label>
+            <input type="number" id="age">
+            <button onclick="calculateCalories()">칼로리 계산</button>
+            <div id="calorie-output"></div>
+        </section>
+
+        <section id="workout-tracker">
+            <h2>운동 트래킹 시스템</h2>
+            <input type="date" id="workout-date">
+            <button onclick="trackWorkout()">운동 기록 추가</button>
+            <div id="workout-log"></div>
+        </section>
+
+        <section id="progress-visualization">
+            <h2>진행 상황 시각화</h2>
+            <canvas id="progressChart" width="400" height="200"></canvas>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
